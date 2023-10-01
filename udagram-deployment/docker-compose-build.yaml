@@ -15,4 +15,4 @@ services:
   udagram-frontend:
     build:
       context: ../udagram-frontend
-    image: ducvuhd/udagram-frontend
+    image: ducvuhd/udagram-api-frontend
