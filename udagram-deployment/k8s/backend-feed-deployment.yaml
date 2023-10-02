@@ -5,7 +5,7 @@ metadata:
  labels:
    service: udagram-api-feed
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       service: udagram-api-feed
@@ -20,7 +20,7 @@ spec:
         imagePullPolicy: Always
         resources:
           requests:
-            memory: "128Mi"
+            memory: "512Mi"
             cpu: "250m"
           limits:
             memory: "2048Mi"
