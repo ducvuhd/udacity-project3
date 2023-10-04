@@ -15,12 +15,12 @@ spec:
         service: udagram-api-user
     spec:
       containers:
-      - image: ducvuhd/udagram-api-user:v1
+      - image: ducvuhd/udagram-api-user:v2
         name: udagram-api-user
         imagePullPolicy: Always
         resources:
           requests:
-            memory: "128Mi"
+            memory: "64Mi"
             cpu: "250m"
           limits:
             memory: "2048Mi"
