@@ -14,5 +14,5 @@ services:
     image: ducvuhd/udagram-api-feed:v2
   udagram-frontend:
     build:
-      context: ../udagram-frontend:v2
-    image: ducvuhd/udagram-api-frontend
+      context: ../udagram-frontend
+    image: ducvuhd/udagram-api-frontend:v2
