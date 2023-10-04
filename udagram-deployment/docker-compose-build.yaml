@@ -7,11 +7,11 @@ services:
   udagram-api-user:
     build:
       context: ../udagram-api-user
-    image: ducvuhd/udagram-api-user
+    image: ducvuhd/udagram-api-user:v1
   udagram-api-feed:
     build:
       context: ../udagram-api-feed
-    image: ducvuhd/udagram-api-feed
+    image: ducvuhd/udagram-api-feed:v1
   udagram-frontend:
     build:
       context: ../udagram-frontend
