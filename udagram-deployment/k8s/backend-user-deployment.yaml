@@ -15,16 +15,19 @@ spec:
         service: udagram-api-user
     spec:
       containers:
-      - image: ducvuhd/udagram-api-user:v3
+      - image: ducvuhd/udagram-api-user:v4
         name: udagram-api-user
+        livenessProbe:
+          initialDelaySeconds: 30
+          periodSeconds: 30        
         imagePullPolicy: Always
         resources:
           requests:
-            memory: "64Mi"
+            memory: "128Mi"
             cpu: "250m"
           limits:
             memory: "2048Mi"
-            cpu: "1000m"
+            cpu: "500m"
         env:
         - name: URL
           valueFrom:
