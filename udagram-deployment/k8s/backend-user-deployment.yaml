@@ -17,9 +17,6 @@ spec:
       containers:
       - image: ducvuhd/udagram-api-user:v4
         name: udagram-api-user
-        livenessProbe:
-          initialDelaySeconds: 30
-          periodSeconds: 30        
         imagePullPolicy: Always
         resources:
           requests:
