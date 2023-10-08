@@ -1,22 +1,12 @@
-# Use NodeJS base image
 FROM node:16
 ENV NODE_OPTIONS=--max_old_space_size=4096
-
-# Create app directory in Docker
+## Create app directory
 WORKDIR /usr/src/app
-
-# Install app dependencies by copying
-# package.json and package-lock.json
+## Install app dependencies
+## A wildcard is used to ensure both package.json AND package-lock.json are copied where available (npm@5+)
 COPY package*.json ./
-
-# Install dependencies in Docker
-RUN npm install
-
-# Copy app from local environment into the Docker image
+RUN npm ci 
+## Bundle app source
 COPY . .
-
-# Set the API’s port number
 EXPOSE 8080
-
-# Define Docker’s behavior when the image is run
-CMD ["npm", "run", "prod"]
+CMD [ "npm", "run", "prod" ]
