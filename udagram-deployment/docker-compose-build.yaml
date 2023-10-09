@@ -3,16 +3,16 @@ services:
   reverse-proxy:
     build:
       context: reverse-proxy
-    image: ducvuhd/reverse-proxy:v7
+    image: ducvuhd/reverse-proxy:v8
   udagram-api-user:
     build:
       context: ../udagram-api-user
-    image: ducvuhd/udagram-api-user:v7
+    image: ducvuhd/udagram-api-user:v8
   udagram-api-feed:
     build:
       context: ../udagram-api-feed
-    image: ducvuhd/udagram-api-feed:v7
+    image: ducvuhd/udagram-api-feed:v8
   udagram-frontend:
     build:
       context: ../udagram-frontend
-    image: ducvuhd/udagram-api-frontend:v7
+    image: ducvuhd/udagram-api-frontend:v8
