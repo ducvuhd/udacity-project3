@@ -15,7 +15,7 @@ spec:
         service: reverse-proxy
     spec:
       containers:
-      - image: ducvuhd/reverse-proxy:v9
+      - image: ducvuhd/reverse-proxy:v10
         name: reverse-proxy
         imagePullPolicy: Always
         resources:
