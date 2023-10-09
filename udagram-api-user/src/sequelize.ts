@@ -15,5 +15,5 @@ export const sequelize = new Sequelize({
       require: true, // This will help you. But you will see nwe error
       rejectUnauthorized: false // This line will fix new error
     }
-  },
+  }
 });
